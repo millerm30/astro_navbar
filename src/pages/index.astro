@@ -1,0 +1,36 @@
+---
+import Navbar from '../components/navbar.astro';
+import Html from '../components/html.astro';
+import Css from '../components/css.astro';
+import Javascript from '../components/javascript.astro';
+import Footer from '../components/footer.astro';
+---
+
+<style>
+  * {
+		margin: 0;
+		padding: 0;
+		font-family: 'Roboto', sans-serif;
+		background-color: #f8f8f8;
+	}
+</style>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Navbar</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<Navbar />
+		<main>
+			<Html />
+			<Css />
+			<Javascript />
+		</main>
+		<Footer />
+	</body>
+</html>

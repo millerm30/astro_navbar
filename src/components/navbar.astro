@@ -1,0 +1,50 @@
+<style>
+  ul {
+    margin: 0;
+    background-color: #120c32;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 16px 32px;
+    gap: 16px;
+    box-shadow: #FF995030 0px 8px 16px;
+  }
+
+  li a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF9950;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+  }
+
+  li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+</style>
+
+<nav>
+ <ul>
+  <li><a href="#top">Home</a></li>
+  <li><a href="#html">HTML</a></li>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#js">JavaScript</a></li>
+ </ul>
+</nav>
+
+
